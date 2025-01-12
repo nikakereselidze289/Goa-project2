@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+
 }
 
 header {
@@ -38,7 +39,7 @@ header {
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     font-size: 18px;
     transition: color 0.3s;
 }
@@ -56,17 +57,20 @@ header {
     align-items: center;
     text-align: center;
     color: white;
-    background-image: url('your-image-url.jpg');
+    background-image: url(https://images.pexels.com/photos/695971/pexels-photo-695971.jpeg?cs=srgb&dl=pexels-ifreestock-695971.jpg&fm=jpg);
 }
 
 .hero h1 {
     font-size: 50px;
     margin-bottom: 10px;
+    color: #2e3a8c;
+
 }
 
 .hero p {
     font-size: 20px;
     margin-bottom: 20px;
+    color: #2e3a8c;
 }
 
 .btn {
@@ -87,7 +91,8 @@ header {
 .activities {
     padding: 40px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #ff4a37;
+    color: #2e3a8c;
 }
 
 h2 {

@@ -1,58 +1,140 @@
 body {
-    background-color: gray;
-    font-family: Arial, sans-serif;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
-    background: #2c3e50;
+    background: #d52b1e;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 4px solid #d52b1e;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
 }
 
 main {
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
 section {
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #d52b1e;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .gallery img {
     width: 100%;
     max-width: 200px;
     margin: 5px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.gallery img {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#contact {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact p {
+    font-size: 1.1em;
+}
+
+#contact strong {
+    color: #d52b1e;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #2c3e50;
+    padding: 15px 0;
+    background: #d52b1e;
     color: white;
+    font-size: 1.2em;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button-container {
+    margin: 10px;
+    text-align: left;
+}
+
+.back-button {
+    color: #d52b1e;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #ffd700;
 }
